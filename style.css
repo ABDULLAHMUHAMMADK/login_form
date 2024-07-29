@@ -35,6 +35,8 @@ header{
         font-size: 40px;
     }
     .input{
+       
+
         border-bottom:2px solid rgba(171, 131, 131,10);
         position: relative;
         
@@ -118,6 +120,10 @@ header{
         .main_container{
             width: 80%;
             position: absolute;
+            border: 2px solid rgb(223, 184, 184);
+        }
+        form{
+            width: 80%;
         }
     }
      
