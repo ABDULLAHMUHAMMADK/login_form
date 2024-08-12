@@ -12,38 +12,55 @@
 </head>
 
 <body>
-   
-           <video class="video" autoplay loop muted plays-inline src="./assets/71122-537102350_small.mp4"></video>
-    
-  
 
-    
-        <div class="main_container">
-            <h1>
-                login
-            </h1>
-            <form action="">
-                <div class="input">
-    
-                    <input type="text" required>
-                    <label for="text">Username</label>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="input">
-                    <input type="password" required>
-                    <label for="Password">Password</label>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <p><input type="checkbox">Remember me <a href="#">Forget password</a></p>
-                <input type="button" class="btn" value="Login">
-                <p>Don't have any account? <a href="#">Register</a></p>
-            </form>
-    
-        </div>
-    
+    <video class="video" autoplay loop muted plays-inline src="./assets/71122-537102350_small.mp4"></video>
 
-   
 
+
+
+    <div class="main_container">
+        <h1>
+            login
+        </h1>
+        <form action="">
+            <div class="input">
+
+                <input type="text" required>
+                <label for="text">Username</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="input">
+                <input type="password" required id="ps">
+                <label for="Password">Password</label>
+                <i class="fa-solid fa-lock" onmousedown="show()" onmouseup="hide()"></i>
+            </div>
+            <p><input type="checkbox">Remember me <a href="#">Forget password</a></p>
+            <input type="button" class="btn" value="Login">
+            <p>Don't have any account? <a href="#">Register</a></p>
+        </form>
+
+    </div>
+
+
+
+    <script>
+        function show() {
+            let x = document.getElementById('ps');
+            if (x.type === "password") {
+                x.type = "text"
+            }
+
+
+
+
+        }
+        function hide() {
+            let x = document.getElementById('ps');
+            if (x.type === "text") {
+                x.type = "password"
+            }
+        }
+    </script>
 </body>
 
 </html>
